@@ -101,6 +101,7 @@ nav:
     - Case Management & Help Center: modules/cases.md
     - License Management: modules/licenses.md
     - Form Builder: modules/form-builder.md
+    - Billing System: modules/billing.md
   - Payments:
     - Payment Overview: payments/overview.md
     - Provider Matrix: payments/providers.md
