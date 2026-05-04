@@ -20,6 +20,7 @@ The Willen Member Portal is composed of **14 modules** across three development 
 | 12 | [Case Management & Help Center](cases.md) | 🟡 Phase 2 | Private member support cases, FAQ, knowledge base |
 | 13 | [License Management](licenses.md) | 🔴 MVP | Track and request service licenses (Okta, Microsoft, Slack, OpenAI etc.) |
 | 14 | [Form Builder](form-builder.md) | 🟢 Phase 3 | Dynamic form generator for custom fee and info collection |
+| 15 | [Billing System](billing.md) | 🟡 Phase 2 | PDF invoice generation, payment, case closure, and member notification — manual and automated |
 
 ## Phase Summary
 
@@ -39,6 +40,7 @@ The Willen Member Portal is composed of **14 modules** across three development 
     - Help Center + Cases
     - Ordering & Donations
     - Stripe (International payments)
+    - **Billing System** (PDF invoices, payment, case closure, notifications)
 
 === "🟢 Phase 3"
     - Form Builder
