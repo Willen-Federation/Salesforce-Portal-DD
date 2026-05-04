@@ -1,0 +1,55 @@
+:root {
+  --md-primary-fg-color: #1A3E6E;
+  --md-primary-fg-color--light: #2D6A9F;
+  --md-primary-fg-color--dark: #122d52;
+  --md-accent-fg-color: #2D6A9F;
+}
+
+.md-header {
+  background: linear-gradient(135deg, #1A3E6E 0%, #2D6A9F 100%);
+}
+
+.md-tabs {
+  background: linear-gradient(135deg, #122d52 0%, #1A3E6E 100%);
+}
+
+/* Willen branding banner */
+.md-hero {
+  background: linear-gradient(135deg, #1A3E6E 0%, #2D6A9F 100%);
+  color: white;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #1A3E6E;
+  color: white;
+}
+
+/* Admonition colours */
+.md-typeset .admonition.warning {
+  border-color: #e65100;
+}
+
+/* Footer */
+.md-footer {
+  background: #1A3E6E;
+}
+
+/* Confidential badge */
+.confidential {
+  display: inline-block;
+  background: #c62828;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}

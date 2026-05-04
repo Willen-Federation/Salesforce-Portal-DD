@@ -1,0 +1,124 @@
+site_name: Willen Member Portal — Design Document
+site_description: System Design Document for the Willen Member Portal built on Salesforce
+site_author: 特定非営利活動法人Willen
+site_url: https://salesforce-portal-dd.netlify.app
+repo_url: https://github.com/Willen-Federation/Salesforce-Portal-DD
+repo_name: Willen-Federation/Salesforce-Portal-DD
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Noto Sans JP
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ja
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://willen.jp/
+      name: Willen Website
+    - icon: fontawesome/brands/github
+      link: https://github.com/Willen-Federation
+      name: Willen Federation GitHub
+  generator: false
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Home: index.md
+  - Overview:
+    - Project Summary: overview/summary.md
+    - Organisation Info: overview/organisation.md
+    - Technology Stack: overview/tech-stack.md
+  - Users & Roles:
+    - User Types: roles/user-types.md
+    - Permissions Matrix: roles/permissions.md
+  - Modules:
+    - Module Overview: modules/overview.md
+    - Membership Management: modules/membership.md
+    - HR Management: modules/hr.md
+    - Application Forms: modules/applications.md
+    - Event Registration: modules/events.md
+    - Resource Sharing: modules/resources.md
+    - Ordering & Fee Collection: modules/ordering.md
+    - Notification Service: modules/notifications.md
+    - Org & Department Pages: modules/departments.md
+    - Case Management & Help Center: modules/cases.md
+    - License Management: modules/licenses.md
+    - Form Builder: modules/form-builder.md
+  - Payments:
+    - Payment Overview: payments/overview.md
+    - Provider Matrix: payments/providers.md
+    - GMO Aozora Net Bank API: payments/gmo-aozora.md
+    - PCI DSS Compliance: payments/pci-dss.md
+  - Workflows:
+    - Workflow System: workflows/overview.md
+    - Application Flow: workflows/application.md
+    - License Request Flow: workflows/license.md
+    - HR Transfer Flow: workflows/hr-transfer.md
+    - Offboarding Flow: workflows/offboarding.md
+  - Integrations: integrations/overview.md
+  - Architecture:
+    - Salesforce Setup: architecture/salesforce.md
+    - Custom Objects: architecture/custom-objects.md
+    - Mobile & Web: architecture/mobile.md
+  - Roadmap:
+    - Development Phases: roadmap/phases.md
+    - MVP Scope: roadmap/mvp.md
+  - Legal & Compliance: legal/compliance.md
+  - Glossary: glossary.md
